@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "LineageDialer",
+    name: "InfinityDialer",
     product_specific: true,
 }
