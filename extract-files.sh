@@ -131,7 +131,8 @@ function blob_fixup {
             grep -q "libaudioclient_shim" "${2}" || "${PATCHELF}" --add-needed "libaudioclient_shim.so" "${2}"
             ;;
 	    vendor/lib*/libnvram.so|\
-        vendor/lib64/libsysenv.so)
+        vendor/lib64/libsysenv.so|\
+        vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron)
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
             ;;
         system_ext/lib64/libsource.so)
